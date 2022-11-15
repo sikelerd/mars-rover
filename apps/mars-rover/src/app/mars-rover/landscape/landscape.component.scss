@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  border: solid 2px black;
+  height: 50px;
+  width: 50px;
+
+  &-occupied {
+    background-image: url('/assets/car-top-view.png');
+    background-size: contain;
+
+    &-east {
+      transform: rotate(90deg);
+    }
+
+    &-south {
+      transform: rotate(180deg);
+    }
+
+    &-west {
+      transform: rotate(270deg);
+    }
+  }
+}

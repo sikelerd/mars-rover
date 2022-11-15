@@ -1,0 +1,7 @@
+<h2>Landscape</h2>
+
+<div *ngFor="let _ of [].constructor(height); let y=index" class="row">
+  <div *ngFor="let _ of [].constructor(width); let x=index" class="column">
+    <div class="field" [class]="classes(x, y)"></div>
+  </div>
+</div>
