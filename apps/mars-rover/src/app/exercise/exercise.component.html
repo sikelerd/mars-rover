@@ -1,27 +1,41 @@
 <h2>Exercise</h2>
 
-<ol>
-  <li>
-    Create a new page "/marsrover".
+<mat-accordion>
+  <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Exercise 1
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <h3>Create a new page "/marsrover".</h3>
     <ul>
       <li>The page should show the component "MarsRoverComponent".</li>
       <li>Provide some simple help for navigation.</li>
     </ul>
-  </li>
+  </mat-expansion-panel>
 
-  <li>
-    The page "/marsrover" shows a landscape and the mars rover.
-
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Exercise 2
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <h3>The page "/marsrover" shows a landscape and the mars rover.</h3>
     <ul>
       <li>Add commands (turn, move) to the page, to be able to control the movements.</li>
     </ul>
-  </li>
+  </mat-expansion-panel>
 
-  <li>
-    The mars rover should analyse rocks. While analyzing it can't move or turn, but the commands are queued and processed afterwards.
-
+  <mat-expansion-panel *ngIf="false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Exercise 3
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <h3>The mars rover should analyse rocks. While analyzing it can't move or turn, but the commands are queued and processed afterwards.</h3>
     <ul>
       <li>Analyzing takes 3 seconds.</li>
     </ul>
-  </li>
-</ol>
+  </mat-expansion-panel>
+
+</mat-accordion>
